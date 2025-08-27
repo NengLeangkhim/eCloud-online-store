@@ -1,5 +1,4 @@
 // Card.tsx
-import React from "react";
 
 type CardProps = {
   title: string;
@@ -15,14 +14,14 @@ export default function Card({ title,size,price, color, image }: CardProps) {
       {image && (
         <img
           src={image}
-          alt={size}
+          alt={title}
           className="w-80 h-80 object-cover rounded-xl mb-4"
         />
       )}
-      <h6 className="text-xl font-semibold text-gray-800">Size : {title}</h6>
-      <h6 className="text-xl font-semibold text-gray-800">Size : {size}</h6>
-      <h6 className="text-gray-600 mt-2">{color}</h6>
-      <h3 className="text-xl font-semibold text-[var(--clr-primary)]">Price : {price}</h3>
+      <h6 className="text-xl font-semibold text-gray-800">{title}</h6>
+      <h6 className="text-xl font-semibold text-gray-800">ទំហំ : {size}</h6>
+      <h6 className="text-gray-600 mt-2">ពណ៌ : {color}</h6>
+      <h3 className="text-xl font-semibold text-[var(--clr-primary)]">តម្លៃ : {price}</h3>
     </div>
   );
 }
