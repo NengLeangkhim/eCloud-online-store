@@ -4,7 +4,7 @@ import { images } from "../assets";
 const Section = () => {
   return (
     <div className="p-10">
-      <h1>title</h1>
+      <h1 className="text-center">title</h1>
       <div className=" flex flex-wrap justify-center">
         <Card
           title="Polo"
