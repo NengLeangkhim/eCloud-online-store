@@ -19,9 +19,9 @@ export default function Card({ title,size,price, color, image }: CardProps) {
         />
       )}
       <h6 className="text-xl font-semibold text-gray-800">{title}</h6>
-      <h6 className="text-xl font-semibold text-gray-800">ទំហំ : {size}</h6>
-      <h6 className="text-gray-600 mt-2">ពណ៌ : {color}</h6>
-      <h3 className="text-xl font-semibold text-[var(--clr-primary)]">តម្លៃ : {price}</h3>
+      <h6 className="text-xl font-semibold text-gray-800">size : {size}</h6>
+      <h6 className="text-gray-600 mt-2">color : {color}</h6>
+      <h3 className="text-xl font-semibold text-[var(--clr-primary)]">price : {price}</h3>
     </div>
   );
 }
